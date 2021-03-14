@@ -22,16 +22,28 @@
     <br/>
     <a href="https://JigokuTsush.in" id="link" target="_self">JigokuTsush<span class="dark">.</span>in</a>
     <br/>
-    <a href="https://JigokuTsush.in" id="link" target="_self"><img alt="Jigoku" id="logo" src="image/logo.png"/></a>
+    <a href="https://JigokuTsush.in" id="link" target="_self"><img alt="Jigoku" id="logo" src="image/logo.png" onmouseover="hover(this);" onmouseout="unhover(this);"/></a>
     <br/>
     <p id="time"></p>
     <p id="footnote">
         请在<b>午夜零点</b>访问<br/>
         Please visit at <b>midnight</b>
     </p>
-    <p class="dark" id="source">地獄少女閻魔あい | 村上水軍 | https://www.pixiv.net/artworks/61664773 </p>
+    <p class="dark" id="source">
+        地獄少女閻魔あい | 村上水軍 | https://www.pixiv.net/artworks/61664773
+        <br/>
+        地獄少女 | せ | https://www.pixiv.net/artworks/25033819
+    </p>
 </div>
 <script type="text/javascript">
+    function hover(element) {
+        element.setAttribute('src', 'image/logo2.png');
+    }
+
+    function unhover(element) {
+        element.setAttribute('src', 'image/logo.png');
+    }
+
     let date = new Date();
     let hour = date.getHours();
     let minu = date.getMinutes();
