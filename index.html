@@ -22,7 +22,9 @@
     <br/>
     <a href="https://JigokuTsush.in" id="link" target="_self">JigokuTsush<span class="dark">.</span>in</a>
     <br/>
-    <a href="https://JigokuTsush.in" id="link" target="_self"><img alt="Jigoku" id="logo" src="image/logo.png" onmouseover="hover(this);" onmouseout="unhover(this);"/></a>
+    <a href="https://JigokuTsush.in" id="link" target="_self"><img alt="Jigoku" id="logo" onmouseleave="stopRotate();"
+                                                                   onmouseover="rotate();"
+                                                                   src="image/logo.png""/></a>
     <br/>
     <p id="time"></p>
     <p id="footnote">
@@ -36,12 +38,22 @@
     </p>
 </div>
 <script type="text/javascript">
-    function hover(element) {
-        element.setAttribute('src', 'image/logo2.png');
+    let rotateVal = 0;
+    let InterVal;
+
+    function rotate() {
+        InterVal = setInterval(function () {
+            const img = document.getElementById('logo');
+            rotateVal += 6;
+            img.style.transform = 'rotate(' + rotateVal + 'deg)';
+            img.style.transition = '1s linear infinite';
+        }, 1)
     }
 
-    function unhover(element) {
-        element.setAttribute('src', 'image/logo.png');
+    function stopRotate() {
+        const img = document.getElementById('logo');
+        clearInterval(InterVal);
+        img.style.transform = 'rotate(0deg)';
     }
 
     let date = new Date();
