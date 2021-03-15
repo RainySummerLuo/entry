@@ -65,6 +65,8 @@ a:active {
 
 .dark {
     color: #660000;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 #logo {
