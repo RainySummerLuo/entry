@@ -29,18 +29,13 @@ body {
 }
 
 h1 {
-    font-weight: normal;
+    font-weight: bold;
     font-size: 40px;
 }
 
 #link {
     font-size: 40px;
     font-family: 'Literata', serif;
-}
-
-#link rt {
-    font-size: 32px;
-    font-weight: bold;
 }
 
 a:link {
@@ -74,29 +69,22 @@ a:active {
     padding-right: 2px;
 }
 
-.space {
-    padding-left: 1px;
-    padding-right: 1px;
-}
-
-.dot {
-    color: #660000;
-}
-
 #logo {
     width: 90px;
     margin-top: 100px;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
+}
+
+#time {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 #footnote {
-    font-size: 30px;
-    font-family: 'Literata', serif;
-    line-height: 70px;
-}
-
-#footnote rt {
     font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
 }
 
 #source {

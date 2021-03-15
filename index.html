@@ -1,8 +1,8 @@
 <html lang="jp">
 <head>
     <meta charset="UTF-8">
-    <title>地獄通信 Eメール</title>
-    <meta content="地獄通信 Eメール" property="og:site_name">
+    <title>地獄通信 入口</title>
+    <meta content="地獄通信 入口" property="og:site_name">
     <meta content="We will take revenge on your behalf. 地獄通信 | 地狱通信 | Jigoku Tsushin | Hotline to Hell | Jigoku Shoujo"
           property="og:description">
     <meta content="https://jigokutsush.in/entry" property="og:url">
@@ -18,75 +18,18 @@
 
 <body>
 <div id="content">
-    <h1>
-        <a href="https://JigokuTsush.in" target="_self">
-            地<span class="dark">&nbsp;&nbsp;</span>獄<span class="dark">&nbsp;&nbsp;</span>通<span class="dark">&nbsp;&nbsp;</span>信
-        </a>
-        <br/>
-        <a href="https://JigokuTsush.in" id="link" target="_self">
-            Jigoku<span class="space">&nbsp;</span>Tsush<span
-                class="dot">.</span>in
-        </a>
-    </h1>
+    <h1>地獄通信</h1>
     <br/>
-    <a href="https://JigokuTsush.in" target="_self"><img alt="Jigoku" id="logo" onmouseleave="stopRotate();"
-                                                         onmouseover="rotate();"
-                                                         src="image/logo.png"/></a>
+    <a href="https://JigokuTsush.in" id="link" target="_self">JigokuTsush<span class="dark">.</span>in</a>
     <br/>
+    <a href="https://JigokuTsush.in" id="link" target="_self"><img alt="Jigoku" id="logo" onmouseleave="stopRotate();"
+                                                                   onmouseover="rotate();"
+                                                                   src="image/logo.png""/></a>
+    <br/>
+    <p id="time"></p>
     <p id="footnote">
-        <a href="mailto:JigokuShojo@JigokuTsush.in" target="_blank">
-            <ruby>Jigoku
-                <rp>(</rp>
-                <rt>地獄</rt>
-                <rp>)</rp>
-            </ruby>
-            <span class="space"></span>
-            <ruby>Shojo
-                <rp>(</rp>
-                <rt>少女</rt>
-                <rp>)</rp>
-            </ruby>
-            <span class="dark">@</span>
-            <ruby>Jigoku
-                <rp>(</rp>
-                <rt>地獄</rt>
-                <rp>)</rp>
-            </ruby>
-            <ruby>
-                <span class="space"></span>Tsush<span
-                    class="dot">.</span>in
-                <rp>(</rp>
-                <rt>通信</rt>
-                <rp>)</rp>
-            </ruby>
-        </a>
-        <br/>
-        <a href="mailto:EnmaAi@JigokuTsush.in" target="_blank">
-            <ruby>Enma
-                <rp>(</rp>
-                <rt>閻魔</rt>
-                <rp>)</rp>
-            </ruby>
-            <span class="space"></span>
-            <ruby>Ai
-                <rp>(</rp>
-                <rt>あい</rt>
-                <rp>)</rp>
-            </ruby>
-            <span class="dark">@</span>
-            <ruby>Jigoku
-                <rp>(</rp>
-                <rt>地獄</rt>
-                <rp>)</rp>
-            </ruby>
-            <ruby>
-                <span class="space"></span>Tsush<span
-                    class="dot">.</span>in
-                <rp>(</rp>
-                <rt>通信</rt>
-                <rp>)</rp>
-            </ruby>
-        </a>
+        请在<b>午夜零点</b>访问<br/>
+        Please visit at <b>midnight</b>
     </p>
     <p class="dark" id="source">
         地獄少女閻魔あい | 村上水軍 | https://www.pixiv.net/artworks/61664773
@@ -110,6 +53,13 @@
         clearInterval(InterVal);
         img.style.transform = 'rotate(0deg)';
     }
+
+    let date = new Date();
+    let hour = date.getHours();
+    let minu = date.getMinutes();
+    hour = ("0" + hour).slice(-2);
+    minu = ("0" + minu).slice(-2);
+    document.getElementById("time").innerText = '[ ' + hour + ' : ' + minu + ' ]';
 </script>
 </body>
 </html>
