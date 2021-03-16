@@ -1,7 +1,7 @@
 /* Originally create by Kiryu | https://www.kiryu.it | mail@nekomimi.it */
 /* Revised by RainySummer | https:/rainysummer.top | hi@rainysummer.top */
 
-@import url('https://fonts.googleapis.com/css2?family=Literata:wght@400;700;800&family=Noto+Serif+JP:wght@700;900&family=Noto+Serif+SC:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:wght@400;500;600;700&family=Noto+Serif+JP:wght@600;700&family=Noto+Serif+SC:wght@600;700&display=swap');
 
 html {
     height: 100%;
@@ -35,14 +35,14 @@ body {
     margin-bottom: 15px;
 }
 
-#link {
+.link {
     font-size: 40px;
     font-family: 'Literata', serif;
 }
 
 #email {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 35px;
 }
 
@@ -99,8 +99,12 @@ a:active {
 
 #footnote {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 5px;
+}
+
+#footnote span {
+    font-weight: 500;
 }
 
 #source {
@@ -114,5 +118,5 @@ a:active {
 }
 
 b {
-    font-weight: 900;
+    font-weight: 600;
 }
