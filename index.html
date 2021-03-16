@@ -5,7 +5,7 @@
     <meta content="地獄通信 入口" property="og:site_name">
     <meta content="We will take revenge on your behalf. 地獄通信 | 地狱通信 | Jigoku Tsushin | Hotline to Hell | Jigoku Shoujo"
           property="og:description">
-    <meta content="https://jigokutsush.in/entry" property="og:url">
+    <meta content="https://entry.jigokutsush.in/" property="og:url">
     <meta content="RainySummer" name="author">
     <meta content="地獄通信, 地狱通信, jigoku tsushin, jigokutsushin, hotline to hell,m jigoku tsuushin, jigoku tsūshin, jigoku shoujo"
           name="keywords">
@@ -28,27 +28,29 @@
     <meta content="#ffffff" name="theme-color">
 </head>
 
-<body>
+<body oncontextmenu="return false;">
 <div id="content">
     <p id="title">
         地<span class="dark">&nbsp;&nbsp;</span>獄<span class="dark">&nbsp;&nbsp;</span>通<span
             class="dark">&nbsp;&nbsp;</span>信
     </p>
-    <a href="https://JigokuTsush.in" id="link" target="_self">Jigoku<span class="space"></span>Tsush<span
+    <a class="link" href="https://JigokuTsush.in" target="_self">Jigoku<span class="space"></span>Tsush<span
             class="dark">.</span>in</a>
     <p id="email">
         <i class="far fa-envelope"></i>&nbsp;&nbsp;<a href="https://email.JigokuTsush.in" target="_self">地獄通信 Eメール</a>
         &nbsp;‧&nbsp;<a href="https://jigokushoujo.JigokuTsush.in" target="_self">地獄少女</a>
     </p>
     <br/>
-    <a href="https://JigokuTsush.in" id="link" target="_self"><img alt="Jigoku" id="logo" onmouseleave="stopRotate();"
-                                                                   onmouseover="rotate();"
-                                                                   src="image/logo.png""/></a>
+    <a class="link" href="https://JigokuTsush.in" target="_self"><img alt="Jigoku" id="logo"
+                                                                      onmousedown="return false"
+                                                                      onmouseleave="stopRotate();"
+                                                                      onmouseover="rotate();"
+                                                                      src="image/logo.png"/></a>
     <br/>
     <p id="time"></p>
     <p id="footnote">
         请在<b>午夜零点</b>访问<br/>
-        Please visit at <b>midnight</b>
+        <span>Please visit at <b>midnight</b></span>
     </p>
     <p class="dark" id="source">
         地獄少女閻魔あい | 村上水軍 | https://www.pixiv.net/artworks/61664773
@@ -61,7 +63,7 @@
     function rotate() {
         InterVal = setInterval(function () {
             const img = document.getElementById('logo');
-            rotateVal += 6;
+            rotateVal += 10;
             img.style.transform = 'rotate(' + rotateVal + 'deg)';
             img.style.transition = '1s linear infinite';
         }, 1)
