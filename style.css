@@ -1,14 +1,14 @@
 /* Originally create by Kiryu | https://www.kiryu.it | mail@nekomimi.it */
 /* Revised by RainySummer | https:/rainysummer.top | hi@rainysummer.top */
 
-@import url('https://fonts.googleapis.com/css2?family=Literata:wght@400;500;600;700&family=Noto+Serif+JP:wght@600;700&family=Noto+Serif+SC:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600;700&family=Noto+Serif+SC:wght@600;700&display=swap');
 
 html {
     height: 100%;
 }
 
 body {
-    font-family: 'Literata', 'Noto Serif JP', 'Noto Serif SC', serif;
+    font-family: 'Noto Serif JP', 'Noto Serif SC', serif;
     color: darkred;
     background-color: black;
     user-select: none;
@@ -37,7 +37,6 @@ body {
 
 .link {
     font-size: 40px;
-    font-family: 'Literata', serif;
 }
 
 #email {
@@ -85,7 +84,7 @@ a:active {
 }
 
 #logo {
-    width: 90px;
+    width: 88px;
     margin-top: 70px;
     margin-bottom: 70px;
 }
