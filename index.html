@@ -75,12 +75,20 @@
         img.style.transform = 'rotate(0deg)';
     }
 
-    let date = new Date();
-    let hour = date.getHours();
-    let minu = date.getMinutes();
-    hour = ("0" + hour).slice(-2);
-    minu = ("0" + minu).slice(-2);
-    document.getElementById("time").innerText = '[ ' + hour + ' : ' + minu + ' ]';
+    function Update() {
+        let date = new Date();
+        let hour = date.getHours();
+        let minu = date.getMinutes();
+        hour = ("0" + hour).slice(-2);
+        minu = ("0" + minu).slice(-2);
+        document.getElementById("time").innerText = '[ ' + hour + ' : ' + minu + ' ]';
+
+        if (date.getHours() === 0 && date.getMinutes() === 0) {
+            window.open("https://jigokutsush.in/", "_self");
+        }
+    }
+
+    setInterval(Update, 1000);
 </script>
 </body>
 </html>
