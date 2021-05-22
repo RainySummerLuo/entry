@@ -89,7 +89,7 @@
                 const hh = ("0" + hour).slice(-2);
                 const mm = ("0" + minute).slice(-2);
                 document.getElementById("time").innerText = '[ ' + hh + ' : ' + mm + ' ]';
-                console.log(hh + mm);
+                console.log(date.toString() + hh + mm);
 
                 if (hour === 0 && minute === 0) {
                     window.open("https://jigokutsush.in/", "_self");
