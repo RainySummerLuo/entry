@@ -24,8 +24,7 @@
     <meta content="/image/ico/mstile-144x144.png?v=LbxPv5O7NL" name="msapplication-TileImage">
     <meta content="/image/ico/browserconfig.xml?v=LbxPv5O7NL" name="msapplication-config">
     <meta content="#ffffff" name="theme-color">
-
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://interface.bilibili.com/serverdate.js" type="text/javascript"></script>
 </head>
 
 <body oncontextmenu="return false;">
@@ -76,15 +75,14 @@
     }
 
     function Update() {
-        let date = new Date($.ajax({async: false}).getResponseHeader("Date"));
-
+        const date = new Date(window.serverdate += 1000);
+        console.log(date);
         let hour, minute;
         hour = date.getHours();
         minute = date.getMinutes();
         const hh = ("0" + hour).slice(-2);
         const mm = ("0" + minute).slice(-2);
         document.getElementById("time").innerText = '[ ' + hh + ' : ' + mm + ' ]';
-        console.log(date + hh + mm);
 
         if (hour === 0 && minute === 0) {
             window.open("https://jigokutsush.in/", "_self");
